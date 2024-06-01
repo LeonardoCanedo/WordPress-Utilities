@@ -1,0 +1,9 @@
+// Use it onLoad
+function setMarginOfNextElementToHeaderHeight() {
+  const header = document.querySelector("header");
+  const nextElement = header.nextElementSibling;
+
+  if (header && nextElement) {
+    nextElement.style.marginTop = header.offsetHeight + "px";
+  }
+}
